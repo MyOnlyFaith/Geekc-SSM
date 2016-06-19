@@ -11,6 +11,6 @@
         http://www.springframework.org/schema/security
         http://www.springframework.org/schema/security/spring-security.xsd">
         <!-- 自动扫描 -->
-        <context:component-scan base-package="cn.geekc" />
+        <context:component-scan base-package="cn.geekc.service" />
         
 </beans>
