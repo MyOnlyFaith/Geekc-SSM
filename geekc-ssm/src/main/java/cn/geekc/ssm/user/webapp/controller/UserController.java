@@ -11,15 +11,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
-
 import cn.geekc.ssm.base.webapp.controller.BaseController;
 import cn.geekc.ssm.user.service.UserService;
 
 @Controller
 @RequestMapping(value = "/user")
-public class UserController extends BaseController{
-	
-	 private static Logger logger = LoggerFactory.getLogger(UserController.class);
+public class UserController extends BaseController {
+
+	private static Logger logger = LoggerFactory.getLogger(UserController.class);
 
 	@Autowired
 	private UserService userService;
@@ -30,9 +29,9 @@ public class UserController extends BaseController{
 			HttpServletRequest request) {
 		ModelAndView modelAndView = new ModelAndView("/test");
 		modelAndView.addObject("user", userService.getUserById(userId));
-		logger.info(getClientIpAddr(request)+"--");
-		logger.info(getRealPath(request)+"--");
-		logger.info(request.getSession().getId()+"==");
+		logger.info(getClientIpAddr(request) + "--");
+		logger.info(getRealPath(request) + "--");
+		logger.info(request.getSession().getId() + "==");
 		return modelAndView;
 	}
 }
