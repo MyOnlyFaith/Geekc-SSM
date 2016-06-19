@@ -1,7 +1,7 @@
-package cn.geekc.ssm.dao;
+package cn.geekc.ssm.user.dao;
 
-import cn.geekc.ssm.model.User;
-import cn.geekc.ssm.model.example.UserExample;
+import cn.geekc.ssm.user.model.User;
+import cn.geekc.ssm.user.model.example.UserExample;
 
 import java.util.List;
 import org.apache.ibatis.annotations.Param;

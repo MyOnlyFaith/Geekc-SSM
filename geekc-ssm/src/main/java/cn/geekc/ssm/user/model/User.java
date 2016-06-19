@@ -1,4 +1,4 @@
-package cn.geekc.ssm.model;
+package cn.geekc.ssm.user.model;
 
 public class User {
     private Long id;

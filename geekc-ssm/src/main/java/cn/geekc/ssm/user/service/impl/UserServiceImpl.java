@@ -1,11 +1,11 @@
-package cn.geekc.ssm.service.impl;
+package cn.geekc.ssm.user.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import cn.geekc.ssm.dao.UserMapper;
-import cn.geekc.ssm.model.User;
-import cn.geekc.ssm.service.UserService;
+import cn.geekc.ssm.user.dao.UserMapper;
+import cn.geekc.ssm.user.model.User;
+import cn.geekc.ssm.user.service.UserService;
 
 @Service
 public class UserServiceImpl implements UserService {

@@ -1,8 +1,8 @@
-package cn.geekc.ssm.service;
+package cn.geekc.ssm.user.service;
 
 import org.springframework.stereotype.Component;
 
-import cn.geekc.ssm.model.User;
+import cn.geekc.ssm.user.model.User;
 
 @Component
 public interface UserService {

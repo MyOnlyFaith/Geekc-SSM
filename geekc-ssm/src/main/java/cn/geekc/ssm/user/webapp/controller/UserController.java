@@ -1,4 +1,4 @@
-package cn.geekc.ssm.webapp.controller;
+package cn.geekc.ssm.user.webapp.controller;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
-import cn.geekc.ssm.service.UserService;
+import cn.geekc.ssm.user.service.UserService;
 
 @Controller
 @RequestMapping(value = "/user")

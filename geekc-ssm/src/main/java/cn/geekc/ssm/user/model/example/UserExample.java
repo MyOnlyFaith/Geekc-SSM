@@ -1,4 +1,4 @@
-package cn.geekc.ssm.model.example;
+package cn.geekc.ssm.user.model.example;
 
 import java.util.ArrayList;
 import java.util.List;
