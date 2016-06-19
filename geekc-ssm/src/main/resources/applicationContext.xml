@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:security="http://www.springframework.org/schema/security"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+        <description>spring Configuration</description>
+        <!-- 引入一些properties -->
+        <context:property-placeholder ignore-unresolvable="true" location="classpath:jdbc.properties"/>
+		<!-- 全局扫描 -->
+		<context:component-scan base-package="cn.geekc.ssm"/>
+		<!-- 注册注解 -->
+		<context:annotation-config />
+		<!-- 引入一些xml -->
+		<import resource="classpath:applicationContext-mybatis.xml" />
+		<import resource="classpath:applicationContext-service.xml" />
+		<import resource="classpath:applicationContext-aop.xml" />
+		<import resource="classpath:applicationContext-security.xml" />
+
+</beans>
