@@ -16,9 +16,11 @@
 		<!-- 注册注解 -->
 		<context:annotation-config />
 		<!-- 引入一些xml -->
-		<import resource="classpath:applicationContext-mybatis.xml" />
+		<!-- <import resource="classpath:applicationContext-mybatis.xml" />
 		<import resource="classpath:applicationContext-service.xml" />
 		<import resource="classpath:applicationContext-aop.xml" />
 		<import resource="classpath:applicationContext-security.xml" />
+		<import resource="classpath:applicationContext-cache.xml" /> -->
+		<import resource="classpath:applicationContext-*.xml" />
 
 </beans>

@@ -207,9 +207,15 @@
 			<artifactId>commons-lang3</artifactId>
 			<version>3.3.2</version>
 		</dependency>
+		<!-- memcached缓存 -->
+		<!-- https://mvnrepository.com/artifact/net.spy/spymemcached -->
+		<dependency>
+			<groupId>net.spy</groupId>
+			<artifactId>spymemcached</artifactId>
+			<version>2.12.0</version>
+		</dependency>
 	</dependencies>
 	<profiles>
-
 	</profiles>
 	<build>
 		<plugins>
