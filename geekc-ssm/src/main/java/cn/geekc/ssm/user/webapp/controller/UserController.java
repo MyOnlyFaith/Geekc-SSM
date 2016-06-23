@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import cn.geekc.ssm.base.webapp.controller.BaseController;
+import cn.geekc.ssm.cache.service.MemcachedService;
 import cn.geekc.ssm.user.service.UserService;
 
 @Controller
@@ -22,6 +23,9 @@ public class UserController extends BaseController {
 
 	@Autowired
 	private UserService userService;
+	
+	@Autowired
+	private MemcachedService memcachedService;
 
 	@RequestMapping(value = "/getuserbyid")
 	@ResponseBody
@@ -32,6 +36,7 @@ public class UserController extends BaseController {
 		logger.info(getClientIpAddr(request) + "--");
 		logger.info(getRealPath(request) + "--");
 		logger.info(request.getSession().getId() + "==");
+		logger.info(memcachedService.get("user") + "==1");
 		return modelAndView;
 	}
 }
