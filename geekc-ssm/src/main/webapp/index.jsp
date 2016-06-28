@@ -1,5 +1,5 @@
 <html>
 <body>
-<h2>${user.name }</h2>
+<h2>hello world</h2>
 </body>
 </html>

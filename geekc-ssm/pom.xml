@@ -214,10 +214,18 @@
 			<artifactId>spymemcached</artifactId>
 			<version>2.12.0</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.javassist/javassist -->
+<dependency>
+    <groupId>org.javassist</groupId>
+    <artifactId>javassist</artifactId>
+    <version>3.15.0-GA</version>
+</dependency>
+		
 	</dependencies>
 	<profiles>
 	</profiles>
 	<build>
+		<finalName>geekc</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
