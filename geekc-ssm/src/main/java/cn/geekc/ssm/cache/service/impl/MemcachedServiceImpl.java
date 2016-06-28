@@ -13,9 +13,10 @@ public class MemcachedServiceImpl implements MemcachedService {
 	@Resource(name = "memcachedClient")
 	private MemcachedClient memcachedClient;
 
-	@Override
 	public Object get(String key) {
 		return memcachedClient.get(key);
 	}
+
+	
 
 }
