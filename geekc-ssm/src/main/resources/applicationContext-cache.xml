@@ -12,7 +12,7 @@
 	<context:property-placeholder location="classpath:memcached.properties" />
 	<bean id="memcachedClient" class="net.spy.memcached.spring.MemcachedClientFactoryBean">
 		<!-- 服务 -->
-		<property name="servers" value="${memcached.host}:${memcached.port}" />
+		<property name="servers" value="${memcached.host1}:${memcached.port1},${memcached.host2}:${memcached.port2}" />
 		<!-- 协议 -->
 		<property name="protocol" value="BINARY" />
 		<!-- 设置默认的转码器(默认以net.spy.memcached.transcoders.SerializingTranscoder) -->
@@ -22,7 +22,7 @@
 			</bean>
 		</property>
 		<!-- 以毫秒为单位设置默认的操作超时时间 -->
-		<property name="opTimeout" value="1000" />
+		<property name="opTimeout" value="5000" />
 		<property name="timeoutExceptionThreshold" value="2000" />
 		<!-- 这是一个坑：<property name="hashAlg" value="KETAMA_HASH"/>-->
 		<property name="hashAlg">
